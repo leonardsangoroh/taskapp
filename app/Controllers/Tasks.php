@@ -29,5 +29,7 @@ class Tasks extends BaseController
 
         //The method below is similar to the php var_dump() method
         //dd($task);
+
+        return view('Tasks/show', ['task' => $task]);
     }
 }
