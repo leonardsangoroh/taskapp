@@ -6,8 +6,10 @@
 <?= $this->section('content') ?>
 
 <h1>
-    Welcome
+    Tasks
 </h1>
+
+<a href="<?= site_url('/tasks/new') ?>"> New task</a>
 
 
     <ul>
