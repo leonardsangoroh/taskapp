@@ -1,0 +1,57 @@
+ERROR - 2021-12-07 13:58:07 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: YES)
+CRITICAL - 2021-12-07 13:58:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+#0 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /Users/leesangoroh/Desktop/project/taskapp/app/Controllers/Tasks.php(17): CodeIgniter\BaseModel->findAll()
+#5 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->index()
+#6 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#7 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/leesangoroh/Desktop/project/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#10 {main}
+ERROR - 2021-12-07 13:59:34 --> Error connecting to the database: Unknown database 'tasks'
+CRITICAL - 2021-12-07 13:59:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tasks'
+#0 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /Users/leesangoroh/Desktop/project/taskapp/app/Controllers/Tasks.php(17): CodeIgniter\BaseModel->findAll()
+#5 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->index()
+#6 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#7 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/leesangoroh/Desktop/project/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#10 {main}
+ERROR - 2021-12-07 14:00:00 --> Table 'taskapp.tasks' doesn't exist
+CRITICAL - 2021-12-07 14:00:00 --> Table 'taskapp.tasks' doesn't exist
+#0 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/leesangoroh/Desktop/project/taskapp/app/Controllers/Tasks.php(17): CodeIgniter\BaseModel->findAll()
+#7 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->index()
+#8 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#9 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/leesangoroh/Desktop/project/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#12 {main}
+CRITICAL - 2021-12-07 14:24:28 --> Too few arguments to function App\Controllers\Tasks::show(), 0 passed in /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show()
+#1 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#2 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/leesangoroh/Desktop/project/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#5 {main}
+CRITICAL - 2021-12-07 14:24:38 --> Too few arguments to function App\Controllers\Tasks::show(), 0 passed in /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show()
+#1 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#2 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/leesangoroh/Desktop/project/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/leesangoroh/Desktop/project/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#5 {main}
