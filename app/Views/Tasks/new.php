@@ -4,6 +4,16 @@
 
 <?= $this->section('content') ?>
 
+<h1>New Task</h1>
+
+    <?php if (session()->has('errors')): ?>
+        <ul>
+        <?php foreach(session('errors') as $error): ?>
+            <li><?= $error ?></li>
+        <?php endforeach; ?>
+        </ul>
+    <?php endif ?>
+
 <?= form_open('/tasks/create') ?>
     <div>
         <label for="descrioption">Description</label>

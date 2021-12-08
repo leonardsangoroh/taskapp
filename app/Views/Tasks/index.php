@@ -16,7 +16,8 @@
         <?php foreach($tasks as $task): ?>
             <li>
                 <?= $task['id'] ?>
-                <?= $task['description'] ?>
+                <?= //The esc method prevents XSS attacks which can come from user input 
+                esc($task['description']) ?>
             </li>
         <?php endforeach ?>    
     </ul>

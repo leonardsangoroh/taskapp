@@ -27,7 +27,7 @@ class Tasks extends BaseController
 
         $task = $model->find($id);
 
-        //The method below is similar to the php var_dump() method
+        //The method below is similar to the php var_dump() method (for printing on the display)
         //dd($task);
 
         return view('Tasks/show', ['task' => $task]);
@@ -41,11 +41,27 @@ class Tasks extends BaseController
 
         $model = new \App\Models\TaskModel;
 
-        $model->insert([
+        $result = $model->insert([
             'description' => $this->request->getPost('description')
         ]);
+        
+        //Checking for validation state
+        if ($result == false) {
 
-        dd($model->insertID);
+            //In order for the errors to be passed to the view, an automatic session will be created
+            return redirect()->back()
+                             ->with('errors', $model->errors()
+                             //using flashdata (data displayed once then destroyed)
+                             ->with('warning', 'Invalid data'));
+        }
+
+        else {
+
+            return redirect()->to("/tasks/show/$result")
+                             //using flashdata (data displayed once then destroyed)
+                             ->with('info', 'Task created successfully');
+        }
 
     }
+
 }

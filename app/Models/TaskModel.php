@@ -10,4 +10,16 @@ class TaskModel extends Model
     protected $table = 'task';
 
     protected $allowedFields = ['description'];
+
+    //validation rules
+    protected $validationRules = [
+        'description' => 'required'
+    ];
+
+    //validation messages
+    protected $validationMessages = [
+        'description' => [
+            'required' => 'Please enter a description'
+        ]
+        ];
 }

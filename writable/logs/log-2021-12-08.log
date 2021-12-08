@@ -1,0 +1,112 @@
+CRITICAL - 2021-12-08 00:53:07 --> Undefined constant "App\Controllers\redirect"
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->create()
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#5 {main}
+CRITICAL - 2021-12-08 00:54:37 --> Undefined constant "App\Controllers\redirect"
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->create()
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#5 {main}
+CRITICAL - 2021-12-08 00:55:53 --> Trying to access array offset on value of type null
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/app/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/leesango...', 13)
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/leesango...')
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('Tasks/show', Array, true)
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/app/Controllers/Tasks.php(33): view('Tasks/show', Array)
+#5 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show('$result')
+#6 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#7 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#10 {main}
+CRITICAL - 2021-12-08 01:00:23 --> Trying to access array offset on value of type null
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/app/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/leesango...', 13)
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/leesango...')
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('Tasks/show', Array, true)
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/app/Controllers/Tasks.php(33): view('Tasks/show', Array)
+#5 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show('$result')
+#6 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#7 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#10 {main}
+CRITICAL - 2021-12-08 01:00:32 --> Trying to access array offset on value of type null
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/app/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/leesango...', 13)
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/leesango...')
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('Tasks/show', Array, true)
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/app/Controllers/Tasks.php(33): view('Tasks/show', Array)
+#5 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show('$result')
+#6 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#7 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#10 {main}
+CRITICAL - 2021-12-08 01:00:36 --> Trying to access array offset on value of type null
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/app/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/leesango...', 13)
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/leesango...')
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('Tasks/show', Array, true)
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/app/Controllers/Tasks.php(33): view('Tasks/show', Array)
+#5 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show('new')
+#6 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#7 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#10 {main}
+CRITICAL - 2021-12-08 01:38:46 --> Trying to access array offset on value of type null
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/app/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/leesango...', 13)
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/leesango...')
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('Tasks/show', Array, true)
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/app/Controllers/Tasks.php(33): view('Tasks/show', Array)
+#5 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show('$result')
+#6 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#7 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#10 {main}
+CRITICAL - 2021-12-08 01:52:53 --> Trying to access array offset on value of type null
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/app/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/leesango...', 13)
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/leesango...')
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('Tasks/show', Array, true)
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/app/Controllers/Tasks.php(33): view('Tasks/show', Array)
+#5 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show('$result')
+#6 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#7 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#10 {main}
+CRITICAL - 2021-12-08 01:52:53 --> Too few arguments to function App\Controllers\Tasks::show(), 0 passed in /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show()
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#5 {main}
+CRITICAL - 2021-12-08 01:53:11 --> Too few arguments to function App\Controllers\Tasks::show(), 0 passed in /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show()
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#5 {main}
+CRITICAL - 2021-12-08 01:53:11 --> Trying to access array offset on value of type null
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/app/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/leesango...', 13)
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/leesango...')
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('Tasks/show', Array, true)
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/app/Controllers/Tasks.php(33): view('Tasks/show', Array)
+#5 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show('$result')
+#6 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#7 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#10 {main}
