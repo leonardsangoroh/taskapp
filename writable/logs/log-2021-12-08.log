@@ -110,3 +110,17 @@ CRITICAL - 2021-12-08 01:53:11 --> Trying to access array offset on value of typ
 #8 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #9 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
 #10 {main}
+CRITICAL - 2021-12-08 08:38:56 --> Too few arguments to function App\Controllers\Tasks::show(), 0 passed in /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show()
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#5 {main}
+CRITICAL - 2021-12-08 08:57:10 --> Too few arguments to function App\Controllers\Tasks::show(), 0 passed in /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Tasks->show()
+#1 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+#2 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/leesangoroh/Documents/GitHub/taskapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/leesangoroh/Documents/GitHub/taskapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/leesango...')
+#5 {main}

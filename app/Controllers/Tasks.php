@@ -27,9 +27,12 @@ class Tasks extends BaseController
 
         $task = $model->find($id);
 
+        if ($task == null) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Task with id $id not found");
+        }
+
         //The method below is similar to the php var_dump() method (for printing on the display)
         //dd($task);
-
         return view('Tasks/show', ['task' => $task]);
     }
 
@@ -52,7 +55,8 @@ class Tasks extends BaseController
             return redirect()->back()
                              ->with('errors', $model->errors()
                              //using flashdata (data displayed once then destroyed)
-                             ->with('warning', 'Invalid data'));
+                             ->with('warning', 'Invalid data'))
+                             ->withInput();
         }
 
         else {
@@ -62,6 +66,52 @@ class Tasks extends BaseController
                              ->with('info', 'Task created successfully');
         }
 
+    }
+
+    public function edit($id) {
+        $model = new \App\Models\TaskModel;
+
+        $task = $model->find($id);
+
+        return view('Tasks/edit', ['task' => $task]);
+    }
+
+    public function update($id) {
+        $model = new \App\Models\TaskModel;
+
+
+        $result = $model->update($id, [
+            'description' => $this->request->getPost('description')
+        ]);
+
+        if ($result) {
+
+            return redirect()->to("/tasks/show/$id")
+                             ->with('info','Task updated succesfully');
+        }
+
+        else {
+            return redirect()->back()
+                             ->with('errors',$model->errors())
+                             ->with('warning','Invalid data')
+                             //Passing the previous input
+                             ->withInput();
+        }
+
+
+        
+    }
+
+    // A reusable method for retrieving data using the ID
+    private function getTaskOr404($id) {
+        
+        $task = $this->model->find($id);
+        
+        if ($task == null) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Task with id $id not found");
+        }
+
+        return $task;
     }
 
 }
